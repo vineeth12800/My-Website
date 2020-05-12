@@ -5785,12 +5785,14 @@ a.close.disabled {
 }
 .bg-primary {
   background-color: #fc766a !important;
+  background-image: "../assets/img/hi.jpg";
 }
 a.bg-primary:hover,
 a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
   background-color: #fb4838 !important;
+  background-image: "../assets/img/hi.jpg";
 }
 .bg-secondary {
   background-color: #5b84b1 !important;
@@ -9153,4 +9155,14 @@ form .row:first-child .floating-label-form-group {
 }
 .hello {
   padding-left: 10rem;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  text-emphasis-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
