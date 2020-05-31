@@ -491,6 +491,55 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.skill-badges {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+  align-content: center;
+  margin-left: 20%;
+}
+.skill-badge {
+  margin: 7px 7px;
+  background-color: #c29f2c;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  align-items: center;
+}
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: " ";
+  background: #38b0e7;
+  display: inline-block;
+  width: 40px;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: " ";
+  background: rgba(245, 245, 245, 0.959);
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #f26c4f;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -5784,9 +5833,12 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 .bg-primary {
-  background-color: #fc766a !important;
-  background-image: "../assets/img/hi.jpg";
+  background-color: #38b1e0 !important;
 }
+.bg-primaryi {
+  background-color: aqua !important;
+}
+
 a.bg-primary:hover,
 a.bg-primary:focus,
 button.bg-primary:hover,
